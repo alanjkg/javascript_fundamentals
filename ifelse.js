@@ -111,4 +111,6 @@ pluralize = function (noun, number) {
 	}
 }
 
+pluralize("dog", 5)
+pluralize("cat", 69)
 
