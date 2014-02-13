@@ -18,12 +18,35 @@ greaterNum = function (num1,num2) {
 			return("The greater number of" + " " + num2 + " " + "and" + " " +num1 + " " + "is" + " " + num2);
 	}
 }
+
+greaterNum(10,2)
+greaterNum(-1,1)
 // EXERCISE: The World Translator
 
 // Write a function named helloWorld that:
 // takes 1 argument, a language code (e.g. "es", "de", "en")
 // returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
 // Call that function for each of the supported languages and log the result to make sure it works.
+
+helloWorld = function (code) {
+
+	if (code =="en"){
+		return "Hello, World"
+	}
+	else if (code=="de") {
+		return "Hallo Welt";
+	}
+
+		else if (code=="es") {
+		return "hola mundo";
+	}
+		else {
+			return "choose either en, de, or es in your code";
+	}
+}
+
+
+
 
 // EXERCISE: The Grade Assigner
 
