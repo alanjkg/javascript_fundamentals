@@ -50,6 +50,13 @@ calculateAge(1989)
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+var calculateSupply = function (age, amountperday) {
+	var maxage = 100;
+	var maximilian = (Math.round(maxage - age)*365)*amountperday;
+	console.log("You will need" +" "+maximilian+ " "+ "to last you until the ripe old age of" + " " + maxage );
+
+}
+
 
 // EXERCISE: The Geometrizer
 
