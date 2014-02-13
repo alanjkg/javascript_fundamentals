@@ -54,9 +54,9 @@ var calculateSupply = function (age, amountperday) {
 	var maxage = 100;
 	var maximilian = (Math.round(maxage - age)*365)*amountperday;
 	console.log("You will need" +" "+maximilian+ " "+ "to last you until the ripe old age of" + " " + maxage );
-
 }
 
+calculateSupply(24,2)
 
 // EXERCISE: The Geometrizer
 
@@ -71,6 +71,19 @@ var calculateSupply = function (age, amountperday) {
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
 
+calcCircumference = function (radius) {
+	var circumference = 2 * Math.PI * radius;
+	console.log("The circumference is" + " " + circumference)
+}
+calcCircumference(10)
+
+calcArea = function (radius) {
+	var area = Math.PI * radius * radius;
+	console.log("The area is" + " " + area)
+}
+calcArea(10)
+
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
@@ -83,4 +96,29 @@ var calculateSupply = function (age, amountperday) {
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+celsiusToFahrenheit = function (temp) {
+
+	var tempf = temp * (9/5) + 32;
+	console.log(temp + "°C" + " " +"is" + " " + tempf + "°F");
+}
+
+celsiusToFahrenheit(30)
+
+
+fahrenheitToCelsius = function (temperature){
+
+var celsius = (temperature-32) * 5/9;
+console.log(fahrenheit + "°F" + " " +"is" + " " + celsius + "°C")
+}
+
+fahrenheitToCelsius(0)
+
+
+
+
+
+
+
+
 
