@@ -37,6 +37,11 @@ console.log("They are either" + " " +agev2 + " " + "or" + " " + agev1)
 // Calculate how many you would eat total for the rest of your life.
 // Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
 
+var currentage = 24
+var maxage = 100
+var foodperday = 2
+var maximilian = ((maxage - currentage)*365)*foodperday
+console.log("You will need" +" "+maximilian+ " "+ "to last you until the ripe old age of" + " " + maxage )
 // EXERCISE: The Geometrizer
 
 // Calculate properties of a circle, using the definitions here.
