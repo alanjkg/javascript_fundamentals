@@ -35,4 +35,43 @@ for (i = 0; i <=10; i++){
 
 // Check the results of assignGrade function from the conditionals exercise for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
+assignGrade = function (numberScore) {
+
+	if (numberScore >=80 && numberScore<= 100){
+		return "A";
+	}
+	else if (numberScore >=70 && numberScore<=79 ){
+		return "B";
+	}
+
+	else if (numberScore >=60 && numberScore<=69 ){
+		return "C";
+	}
+
+	else if (numberScore >=50 && numberScore<=59 ){
+		return "D";
+	}
+	else if (numberScore >=0 && numberScore<=49 ){
+		return "F";
+	}
+		else {
+			return "choose the appropriate grade within 0-100";
+	}
+}
+
+for (i = 60; i <= 100; i++){
+	console.log("For "+ i+", you got a " + assignGrade(i)+".")
+}
+
+// Ch- so your log should show "For 89, you got a B. For 90, you got an A.", etc.
+
+
+
+
+
+
+
+
+
+
 
