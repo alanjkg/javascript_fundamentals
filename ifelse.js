@@ -37,14 +37,17 @@ helloWorld = function (code) {
 		return "Hallo Welt";
 	}
 
-		else if (code=="es") {
+	else if (code=="es") {
 		return "hola mundo";
 	}
 		else {
 			return "choose either en, de, or es in your code";
 	}
 }
-
+helloWorld ("en")
+helloWorld ("de")
+helloWorld ("es")
+helloWorld ("fjeiowjfeow")
 
 
 
@@ -55,6 +58,33 @@ helloWorld = function (code) {
 // returns a grade for the score, either "A", "B", "C", "D", or "F".
 // Call that function for a few different scores and log the result to make sure it works.
 
+assignGrade = function (numberScore) {
+
+	if (numberScore >=80 && numberScore<= 100){
+		return "A";
+	}
+	else if (numberScore >=70 && numberScore<=79 ){
+		return "B";
+	}
+
+	else if (numberScore >=60 && numberScore<=69 ){
+		return "C";
+	}
+
+	else if (numberScore >=50 && numberScore<=59 ){
+		return "D";
+	}
+	else if (numberScore >=0 && numberScore<=49 ){
+		return "F";
+	}
+		else {
+			return "choose the appropriate grade within 0-100";
+	}
+}
+
+assignGrade(90);
+assignGrade(54);
+assignGrade(-1);
 // EXERCISE: The Pluralizer
 
 // Write a function named pluralize that:
@@ -63,6 +93,22 @@ helloWorld = function (code) {
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+pluralize = function (noun, number) {
 
+	if (number > 1){
+		return number + " " + noun +"s";
+	}
+
+	else if (number < 1){
+		return "Not Applicable";
+	}
+
+	else if (noun == "geese" && noun == "sheep"){
+		return number + " " + noun;
+	}
+		else {
+			return "1" + " "+ noun;
+	}
+}
 
 
