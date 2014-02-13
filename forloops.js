@@ -60,10 +60,9 @@ assignGrade = function (numberScore) {
 }
 
 for (i = 60; i <= 100; i++){
-	console.log("For "+ i+", you got a " + assignGrade(i)+".")
+	console.log("For "+ i + ", you got a " + assignGrade(i) + ".")
 }
 
-// Ch- so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
 
 
