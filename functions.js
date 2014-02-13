@@ -15,6 +15,7 @@ var tellFortune = function(childnum, wife, place, jobtitle) {
 }
 
 tellFortune(3,"Emma Stone","Ottawa","Software Developer")
+tellFortune(3209139, "Leonardo DiCaprio", "Hollywood", "ACTOR")
 
 // EXERCISE: The Age Calculator
 
@@ -26,6 +27,18 @@ tellFortune(3,"Emma Stone","Ottawa","Software Developer")
 // outputs the result to the screen like so: "You are either NN or NN"
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
+var calculateAge = function(birthyear) {
+	var currentYear = new Date().getFullYear();
+	var birthYear = birthyear;
+	var agev1 = currentYear - birthyear;
+	var agev2 = agev1-1
+console.log("You are either" + " " +agev2 + " " + "or" + " " + agev1);
+
+}
+
+calculateAge(1989)
+
+
 
 // EXERCISE: The Lifetime Supply Calculator
 
