@@ -7,6 +7,11 @@
 // Store the following into variables: number of children, partner's name, geographic location, job title.
 // Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 
+var childnum = 3
+var wife = "Amber Heard"
+var place = "Toronto"
+var jobtitle = "Software Developer"
+console.log("You will be a " + jobtitle +" " + "in" + " " + place + ", and married to" + " "+ wife + " " + "with" + " " + childnum + " " + "kids.")
 // EXERCISE: The Age Calculator
 
 // Forgot how old someone is? Calculate it!
@@ -15,6 +20,12 @@
 // Store their birth year in a variable.
 // Calculate their 2 possible ages based on the stored values.
 // Output them to the screen like so: "They are either NN or NN", substituting the values.
+
+var currentyear = 2014
+var birthyear = 1989
+var agev1 = currentyear - birthyear
+var agev2 = agev1-1
+console.log("They are either" + " " +agev2 + " " + "or" + " " + agev1)
 
 // EXERCISE: The Lifetime Supply Calculator
 
