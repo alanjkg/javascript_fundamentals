@@ -13,6 +13,19 @@
 // cumin
 // cocoa
 
+var recipe = {
+  title: "Pasadena, CA",
+  servings: 2,
+  ingredients: ["cinnamon", "cumin", "cocoa"]
+};
+
+console.log(recipe.title);
+console.log("Serves" + recipe.servings);
+console.log("Ingredients:");
+for (var i = 0; i < recipe.ingredients.length; i++) {
+  console.log(recipe.ingredients[i]);
+}
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
@@ -21,12 +34,49 @@
 // Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
+var myBooks = [
+{title: "The Hobbit",
+ author: "JRR Tolkien",
+ alreadyRead:true},
+{title: "The Book Thief",
+author: "Markus Zusak",
+alreadyRead:false}
+
+]
+
+
+for (var i = 0; i < myBooks.length; i++) {
+	if (myBooks[i].alreadyRead == true) {
+  console.log("You have read " + myBooks[i].title + " by " + myBooks[i].author);
+}
+	else {console.log("You have not yet read " + myBooks[i].title + " by " + myBooks[i].author); }
+}
+
+
+
 // EXERCISE: The Movie Database
 
 // It's like IMDB, but much much smaller!
 
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
+
+
+var Movie = {
+	title: "Fight Club",
+	duration: 140,
+	stars: ["Edward Norton", "Brad Pitt", "Jared Leto"],
+	display: function () {return this.title + "lasts for " + this.duration + " " + "minutes." + " Stars:"+this.stars.join(', ');}
+};
+Movie.display();
+
+
+
+
+
+
+
+
 
 
 
